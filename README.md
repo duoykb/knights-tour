@@ -1,2 +1,2 @@
 # knights-tour
-<p><em>brute force solution to the knights tour problem</em></p>
+<p><strong>brute force solution to the knights tour problem</strong></p>
