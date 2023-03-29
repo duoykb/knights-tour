@@ -1,2 +1,2 @@
 # knights-tour
-<p><strong>brute force solution to the knights tour problem</strong></p>
+<p><strong>solution to the knights tour problem using <em>Warnsdorff's rule</em></strong></p>
