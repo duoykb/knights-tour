@@ -9,7 +9,7 @@ def _min_left(n):
     return _max_right(n) - 7
 
 
-def _step_two_on_y_one_on_x(n, y_direction=-1, x_direction=-1):
+def _two_step_on_y_one_on_x(n, y_direction=-1, x_direction=-1):
     max_right = _max_right(n)
     new_max_right = max_right + (16 * y_direction)
 
@@ -24,7 +24,7 @@ def _step_two_on_y_one_on_x(n, y_direction=-1, x_direction=-1):
         return one_on_x
 
 
-def _step_two_on_x_one_on_y(n, y_direction=-1, x_direction=-1):
+def _two_step_on_x_one_on_y(n, y_direction=-1, x_direction=-1):
     max_right = _max_right(n)
     min_left = _min_left(n)
     two_on_x = n + (2 * x_direction)
@@ -40,15 +40,15 @@ def _step_two_on_x_one_on_y(n, y_direction=-1, x_direction=-1):
 
 def find_available_moves(current_position):
     moves = [
-        _step_two_on_y_one_on_x(current_position),
-        _step_two_on_y_one_on_x(current_position, x_direction=1),
-        _step_two_on_y_one_on_x(current_position, y_direction=1),
-        _step_two_on_y_one_on_x(current_position, 1, 1),
+        _two_step_on_y_one_on_x(current_position),
+        _two_step_on_y_one_on_x(current_position, x_direction=1),
+        _two_step_on_y_one_on_x(current_position, y_direction=1),
+        _two_step_on_y_one_on_x(current_position, 1, 1),
 
-        _step_two_on_x_one_on_y(current_position),
-        _step_two_on_x_one_on_y(current_position, x_direction=1),
-        _step_two_on_x_one_on_y(current_position, y_direction=1),
-        _step_two_on_x_one_on_y(current_position, 1, 1)
+        _two_step_on_x_one_on_y(current_position),
+        _two_step_on_x_one_on_y(current_position, x_direction=1),
+        _two_step_on_x_one_on_y(current_position, y_direction=1),
+        _two_step_on_x_one_on_y(current_position, 1, 1)
     ]
 
     for move in moves:
