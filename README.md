@@ -1,2 +1,3 @@
-# knights-tour
-<p><strong>solution to the knights tour problem</strong></p>
+# Knights Tour
+The Knight's Tour is a classic puzzle where you try to move a knight chess piece around a chessboard, landing on every square exactly once.
+
